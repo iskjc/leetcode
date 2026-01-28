@@ -15,5 +15,5 @@
 - picture(describption)
 - FILE_.md
 
-including introduction, solutions in different languages, best comment:smile:.
+including introduction, solutions in different languages.
 
