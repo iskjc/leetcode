@@ -9,25 +9,16 @@ eg:
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-       if(!head){return nullptr;}
-       ListNode* pa=head->next;
-       ListNode* curr=nullptr;
-       head->next=nullptr;
-       while(pa){
-            curr=pa;
-            pa=pa->next;
-            curr->next=head;
-            head=curr;
-       }return head;
+        ListNode* prev = nullptr;
+        ListNode* curr = head;
+        while (curr) {
+            ListNode* next = curr->next;
+            curr->next = prev;
+            prev = curr;
+            curr=next;
+        }
+        return prev;
     }
 };
-
 ```
-因可能存在空链表
-```cpp
-ListNode* pa=head->next;
-```
-可能会因此报错，一定要在前面加上
-```cpp
-if(!head){return nullptr;}
-```
+此为标准模板解法，后续会在 **回文链表_234** 中使用
