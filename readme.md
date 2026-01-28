@@ -1,6 +1,6 @@
 <div align="center">
 
-# Leetcode 
+# Leetcode Notebook
 </div>
 
 ---
