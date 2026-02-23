@@ -5,7 +5,7 @@
 
 ---
 
-- ### this is a notebook for recording, also for review in the future
+- ### this is a notebook for recording
 
 - ### this repo includes different programming languages
 ---
